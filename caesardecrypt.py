@@ -4,8 +4,8 @@ alpha = ('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 
 
 def alphashifter(x,char):
+    cur = alpha.index(char)
     try:
-        cur = alpha.index(char)
         if cur + x >= 26:
             return alpha[(cur + x) - 26]
         return alpha[cur + x]
